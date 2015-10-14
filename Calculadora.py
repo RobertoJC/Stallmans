@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 #calculadora Cientifica!
 #librerias a importar
-import time
-import os
-from math import *
+from time import sleep
+from os import system
+from math import log, sin, cos, tan, asin, acos, atan
 
 #definicion de funciones
 def Suma( x,y ):
@@ -62,7 +62,7 @@ while True:
 		print ('{:^80}'.format('12.tangente invertido'))
 		print ('{:^80}'.format('13. SALIR'))
 		opc=int(input("ingrese una opcion:"))
-		os.system('clear')
+		system('clear')
 		if opc == 1:
 			num1 = eval(input("ingresa a ="))
 			num2 = eval(input("ingresa b ="))
@@ -129,6 +129,6 @@ while True:
 		print("\nPara salir intente la opcion 13")
 	except (NameError):
 		print("\nError de tipo de dato")
-	time.sleep(2)
-	os.system('clear')
+	sleep(2)
+	system('clear')
 
